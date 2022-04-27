@@ -18,6 +18,9 @@ shopt -s nullglob
 
 _EMQX_HOME='/opt/emqx'
 
+# support Rainbond
+EMQX_HOST=${HOSTNAME}.${SERVICE_NAME}
+
 if [[ -z "$EMQX_NODE_NAME" ]]; then
 
     if [[ -z "$EMQX_NAME" ]]; then
